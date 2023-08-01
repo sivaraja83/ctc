@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card</title>
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="cards">
+                <div class="back">
+                    <p id="cardCvc">000</p>
+                </div>
+                <div class="front" >
+                    <div class="text-content">
+                        <img src="./images/card-logo.svg" alt="" class="logo">
+                        <div class="naming">
+                            <h1 class="cardNo">0000 0000 0000 0000</h1>
+                            <div class="name">
+                                <h2 class="cardName">Jane APPLESEED</h2>
+                                <span><span>00</span> / <span>00</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <form action="#">
+                <label for="uname">CARDHOLDER NAME</label>
+                <input type="text" name="cname" id="uname" placeholder="e.g. Jane APPLESEED" />
+                <label for="uno">CARD NUMBER</label>
+                <input type="number" name="cno" id="uno" placeholder="e.g. 1234 5678 9123 0000" />
+                <div class="expiry">
+                    <div class="date">
+                        <label for="date">EXP. DATE (MM/YY)</label>
+                        <span class="my">
+                            <input type="number" class="mm" placeholder="MM"/>
+                             <input type="number" class="yy" placeholder="YY"/>
+                        </span>
+                            
+                    </div>
+                    <div class="cvc">
+                        <label for="cvc" class="cvc">CVC</label>
+                        <input type="number" placeholder="e.g. 123"/>
+                    </div>
+                </div>
+                <button>Confirm</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
